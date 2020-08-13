@@ -1,4 +1,18 @@
-# Toy Robot Coding Challenge, by Sean Thompson developed in Angular
+# Toy Robot Coding Challenge developed in Angular
+
+Toy Robot is a pretty popular coding challenge companies use for job vetting around the Melbourne IT scene I've seen it used quite a bit.
+
+This is my take on it. The original spec for the challenge is in the PROBLEM.md document in the root of this repo. It says an interface isn't required but being an interface dev I've chosen to implement one anyway as well as extend it a little with a header and a command history etc..
+
+Stack:
+
+- Angular 9
+- TypeScript
+- NGRX
+- Jasmine
+- Prettier
+- TS Lint
+- immutabilty-helper
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
