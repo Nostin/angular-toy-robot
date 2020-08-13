@@ -1,0 +1,10 @@
+li {
+  color: green;
+  margin: 0 auto;
+  text-align: left;
+  width: 400px;
+}
+
+li.error {
+  color: red;
+}

@@ -1,0 +1,40 @@
+p {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid black;
+  height: 50px;
+  padding: 0;
+  width: 50px;
+}
+
+td span {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.activeEast {
+  background: url('/assets/robot_east.png');
+}
+
+.activeNorth {
+  background: url('/assets/robot_north.png');
+}
+
+.activeSouth {
+  background: url('/assets/robot_south.png');
+}
+
+.activeWest {
+  background: url('/assets/robot_west.png');
+}

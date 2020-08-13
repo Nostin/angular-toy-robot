@@ -1,0 +1,6 @@
+<label>
+  <p>Please type your commands here:</p>
+  <p class="error" *ngIf="error">{{ error }}</p>
+  <input (keydown)="onPressEnter($event)" [(ngModel)]="command" placeholder="enter command" />
+</label>
+<button (click)="issueCommand()">Enter</button>

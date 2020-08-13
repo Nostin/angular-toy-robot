@@ -1,0 +1,3 @@
+<ol>
+  <li *ngFor="let cmd of commandHistory$ | async" [ngClass]="{ error: cmd.error }">{{ cmd.command }}</li>
+</ol>

@@ -1,0 +1,36 @@
+<table>
+  <tbody>
+    <tr *ngFor="let rowIndex of gridSizeArray(); let rI = index">
+      <td *ngFor="let colIndex of gridSizeArray(); let cI = index">
+        <span
+          [ngClass]="{
+            activeEast:
+              (tableTop$ | async)?.robotIsPlaced &&
+              (tableTop$ | async)?.faceDirection === RobotFaceOptions.East &&
+              (tableTop$ | async)?.ycoord === (tableTop$ | async)?.gridSize - 1 - rI &&
+              (tableTop$ | async)?.xcoord === cI,
+            activeNorth:
+              (tableTop$ | async)?.robotIsPlaced === true &&
+              (tableTop$ | async)?.faceDirection === RobotFaceOptions.North &&
+              (tableTop$ | async)?.ycoord === (tableTop$ | async)?.gridSize - 1 - rI &&
+              (tableTop$ | async)?.xcoord === cI,
+            activeSouth:
+              (tableTop$ | async)?.robotIsPlaced === true &&
+              (tableTop$ | async)?.faceDirection === RobotFaceOptions.South &&
+              (tableTop$ | async)?.ycoord === (tableTop$ | async)?.gridSize - 1 - rI &&
+              (tableTop$ | async)?.xcoord === cI,
+            activeWest:
+              (tableTop$ | async)?.robotIsPlaced === true &&
+              (tableTop$ | async)?.faceDirection === RobotFaceOptions.West &&
+              (tableTop$ | async)?.ycoord === (tableTop$ | async)?.gridSize - 1 - rI &&
+              (tableTop$ | async)?.xcoord === cI
+          }"
+        ></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p *ngIf="(tableTop$ | async)?.reportPosition">
+  Report Output: {{ (tableTop$ | async)?.xcoord }},{{ (tableTop$ | async)?.ycoord }},
+  {{ (tableTop$ | async)?.faceDirection }}
+</p>

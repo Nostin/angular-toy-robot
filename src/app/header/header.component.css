@@ -1,0 +1,19 @@
+header {
+  background: white url('/assets/doomed.png') no-repeat;
+  background-size: contain;
+  border-bottom: 1px solid grey;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+h1 {
+  display: block;
+  line-height: 2;
+  margin: 0;
+}
+
+h2 {
+  display: block;
+  line-height: 3;
+  margin: 0;
+}
