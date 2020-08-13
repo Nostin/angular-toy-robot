@@ -31,6 +31,8 @@
   </tbody>
 </table>
 <p *ngIf="(tableTop$ | async)?.reportPosition">
-  Report Output: {{ (tableTop$ | async)?.xcoord }},{{ (tableTop$ | async)?.ycoord }},
-  {{ (tableTop$ | async)?.faceDirection }}
+  Report Output:
+  <span
+    >{{ (tableTop$ | async)?.xcoord }},{{ (tableTop$ | async)?.ycoord }},{{ (tableTop$ | async)?.faceDirection }}</span
+  >
 </p>
